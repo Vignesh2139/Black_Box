@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh S - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #00f7ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #00f7ff;
+    }
+
+    .typing {
+      font-size: 1rem;
+      margin-top: 5px;
+      height: 20px;
+      color: #ff00ff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 400px;
+      text-align: center;
+      margin-top: 30px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px #00f7ff80;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .skills span {
+      background: #00f7ff20;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      border: 1px solid #00f7ff80;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Vignesh S</h1>
+  <div class="typing" id="type"></div>
+
+  <div class="card">
+    <p>I'm a passionate student & app developer based in India. I love building apps using Flutter, Firebase & modern web tech.</p>
+    <div class="skills">
+      <span>Flutter</span>
+      <span>Firebase</span>
+      <span>Supabase</span>
+      <span>Django</span>
+      <span>React</span>
+    </div>
+  </div>
+
+  <footer>© 2025 Vignesh S. All rights reserved.</footer>
+
+  <script>
+    const roles = ["App Developer", "Student", "Visionary", "Tech Explorer"];
+    let i = 0;
+    setInterval(() => {
+      document.getElementById("type").textContent = roles[i];
+      i = (i + 1) % roles.length;
+    }, 1500);
+  </script>
+
+</body>
+</html>
+
